@@ -296,6 +296,8 @@ li a:hover {
 .services .item .cont{
     border: 1px solid #ccc;
     border-radius: 15px;
+        width: 360px;
+    margin: auto;
     margin-bottom: 20px;
 }
 .services .item .cont .cont_icon{
