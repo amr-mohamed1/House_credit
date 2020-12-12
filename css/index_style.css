@@ -118,7 +118,7 @@ li a:hover {
 @media(max-width:490px){
     .hero .left img{
         height: 300px;
-        width: 490px;
+        width: 450px;
     }
 }
 .hero .right{
