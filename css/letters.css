@@ -4,21 +4,19 @@ body{
     direction: rtl;
     font-family: 'Cairo', sans-serif;
 }
-.header{
-    background-image: url("../img/background\ 1.jpg");
+.headder{
+    background-image: url("../img/3325193.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
-.header .overlay{
-    background-color: rgba(255, 255, 255, .75);
-    width: 100%;
+.headder .overlay{
+    background-color: rgba(252, 252, 255, 0.7);
     height: 100%;
     top: 0;
     left: 0;
 }
 .navbar {
     padding: 10px 0;
-    margin-bottom:50px;
 }
 .navbar-expand-lg .navbar-nav .nav-link{
 margin: 8px 3px;
@@ -69,6 +67,9 @@ li a:hover {
     background-color: #efefef;
     border-radius: 10px;
 }
+.navbar-expand-lg .navbar-nav .dropdown-menu  .show{
+    transition: all 1s ease-in;
+}
 .navbar .active{
     color: #fff;
     color: #1f2dce;
@@ -95,14 +96,12 @@ li a:hover {
 
 /*start hero section*/
 .hero{
-    direction: ltr;
+    direction: rtl;
+    
 }
-.hero h1{
-    text-align: center;
-    padding-top: 60px;
-}
-.hero h1 span{
-    color: #1f2dce;
+.hero h2{
+    padding-top: 120px;
+    text-shadow: 1px 1px 1px #1f2dce;
 }
 .hero button{
     padding: 10px 20px;
@@ -122,21 +121,17 @@ li a:hover {
     background-color: #007bff;
     color:#fff;
 }
-/*end decoration*/
 
-/*start about */
-.about{
-    padding-top: 50px;
-    padding-bottom: 50px;
+/*end hero section*/
+
+
+/*start roles*/
+.role{
+    padding-bottom: 20px;
 }
-.about h3{
-    text-align: right;
-    padding-bottom: 5px;
-}
-.about .bar {
-    float: right;
+.role .bar {
     height: 4px;
-    width: 90px;
+    width: 160px;
     background: #1f2dce;
     position: relative;
     border-radius: 5px;
@@ -150,10 +145,10 @@ li a:hover {
     }
 
     to {
-        transform: translateX(120px);
+        transform: translateX(180px);
     }
 }
-.about .bar::before {
+.role .bar::before {
     content: '';
     position: absolute;
     left: 0;
@@ -166,52 +161,61 @@ li a:hover {
     animation-iteration-count: infinite;
     animation-name: MOVE-BG;
 }
-.about .left img{
-    width: 350px;
-    display: block;
-    margin: auto;
-}
-@media(max-width:791px){
-    .about .left img{
-        width:350px;
-        display: block;
-        margin: auto;
+@media(max-width:750px){
+    .role img{
+        margin-top: 20px;
     }
-    .about .right h3{
-        padding-top: 35px;
-        text-align: center;
-    }
-    .about .bar {
-        float: none;
-    }
-
 }
-.about .right{
-    padding-right: 35px;
-}
-.about .right p{
-    padding-top: 35px;
+.role p{
     text-align: right;
     font-size: 20px;
-    font-weight: 700;
-    color:#333;
-    line-height: 1.8em;
+    padding-bottom: 5px;
 }
-.about .right a{
-    padding: 10px 20px;
-    background-color: #1f2dce;
-    float: right;
-    color:#eee;
-    border-radius: 20px;
+.role h3{
+    font-family: 'Cairo', sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+}
+.role .content{
+    text-align: right;
+    padding-top: 30px;
+}
+.role .content h3{
+    font-family: 'Cairo', sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    padding-top: 30px;
+}
+.role .content p{
+    padding-top: 20px;
+    color:#000
+}
+.role .content img{
+    display: block;
+    margin: auto;
+    padding: 20px 0;
+}
+.role .content span{
+    font-size: 17px;
+    color: #777;
+    display: inline-block;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+.role .content span i{
+    font-size: 20px;
+    color:red;
+    margin-left: 5px;
+}
+.role .content a{
+    padding-right: 10px;
+    color:#1f2dce;
     text-decoration: none;
     transition: all .3s ease-in;
+    text-align: center;
+    font-size: 18px;
 }
-.about .right a:hover{
-    background-color: #007bff;
-    color:#fff;
-}
-/*end about */
-
+/*end roles*/
 
 /*start footer*/
 .primary_footer{
@@ -254,6 +258,7 @@ li a:hover {
     color:#eee
 }
 .footer p a{
-    text-decoration:none
+    text-decoration:none;
+    color:#6a74dd
 }
 /*end footer*/

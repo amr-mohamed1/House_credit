@@ -4,13 +4,12 @@ body{
     direction: rtl;
     font-family: 'Cairo', sans-serif;
 }
-.header{
+.headder{
     background-image: url("../img/3325193.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    height: 500px;
 }
-.header .overlay{
+.headder .overlay{
     background-color: rgba(252, 252, 255, 0.7);
     height: 100%;
     top: 0;
@@ -116,6 +115,7 @@ li a:hover {
     transition: all .3s ease-in;
     outline: none;
     border: 0;
+    margin-bottom: 150px;
 }
 .hero button:hover{
     background-color: #007bff;
@@ -170,6 +170,12 @@ li a:hover {
     width: 300px;
     margin: auto;
     padding-bottom: 50px;
+    margin-top: 90px;
+}
+@media(max-width:750px){
+    .role img{
+        margin-top: 20px;
+    }
 }
 .role p{
     text-align: right;

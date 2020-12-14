@@ -232,6 +232,28 @@ li a:hover {
         font-weight: 700;
         margin-bottom: 15px;
 }
+.about .right a{
+    padding: 10px 20px;
+    background-color: #1f2dce;
+    float: right;
+    margin-top: 20px;
+    color:#eee;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: all .3s ease-in;
+}
+.about .right a:hover{
+    background-color: #007bff;
+    color:#fff;
+}
+/*start decoration*/
+.shape2{
+    position: absolute;
+    left: 7%;
+    top: 2%;
+    z-index: 1;
+    animation: rotate 5s infinite linear;
+}
 .about .bar {
     height: 4px;
     width: 110px;
@@ -266,8 +288,8 @@ li a:hover {
 }
 .about .left img{
     width:280px;
-    padding-top: 60px;
-    margin-left: 150px;
+    padding-top: 20px;
+    margin-left: 100px;
 }
 @media(max-width:990px){
     .about .left img{
@@ -296,7 +318,7 @@ li a:hover {
 .services .item .cont{
     border: 1px solid #ccc;
     border-radius: 15px;
-        width: 360px;
+    width: 360px;
     margin: auto;
     margin-bottom: 20px;
 }
@@ -364,6 +386,11 @@ li a:hover {
 }
 .dept .left img{
     width:350px;
+}
+@media(max-width:750px){
+    .dept .left img{
+        display: none;
+    }
 }
 .dept .right h3{
     text-align: right;
