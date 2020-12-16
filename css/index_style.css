@@ -294,6 +294,7 @@ li a:hover {
 @media(max-width:990px){
     .about .left img{
         margin-left: 60px;
+        margin-top: 50px;
     }
 }
 .about .right{
