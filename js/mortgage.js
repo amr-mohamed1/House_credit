@@ -3,4 +3,12 @@ $("document").ready(function () {
         window.scrollTo({ top: 520, behavior: 'smooth'});
       });
 
+$('.message .close')
+  .on('click', function() {
+    $(this)
+      .closest('.message')
+      .transition('fade')
+    ;
+  })
+;
 })
