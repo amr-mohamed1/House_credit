@@ -436,14 +436,6 @@ li a:hover {
     width: 150px;
     float: right;
 }
-.primary_footer a{
-    display: block;
-    text-decoration: none;
-    color:#eee;
-    padding-bottom:15px;
-    direction: rtl;
-    text-align: right;
-}
 .primary_footer p ,.primary_footer a{
     padding-bottom:10px;
     display: block;

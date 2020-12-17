@@ -229,8 +229,8 @@ li a:hover {
     float: right;
 }
 .primary_footer p ,.primary_footer a{
+    padding-bottom:10px;
     display: block;
-    padding-bottom:15px;
     text-decoration: none;
     color:#eee;
     text-align: right;
