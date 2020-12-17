@@ -225,16 +225,17 @@ li a:hover {
 .primary_footer h3{
     color: #fff;
     padding-top: 50px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     text-align: right;
+    font-family: 'Cairo', sans-serif;
 }
 .primary_footer img{
     width: 150px;
     float: right;
 }
 .primary_footer p ,.primary_footer a{
+    padding-bottom:10px;
     display: block;
-    padding-bottom:15px;
     text-decoration: none;
     color:#eee;
     text-align: right;
@@ -252,7 +253,7 @@ li a:hover {
 .footer p{
     margin: 0;
     padding: 25px 0;
-    font-size: 15px;
+    font-size: 16px;
     letter-spacing: 1.5px;
     font-weight: 700;
     color:#eee
