@@ -126,7 +126,7 @@ li a:hover {
 
 /*start about */
 .about{
-    padding-top: 50px;
+    padding-top: 20px;
     padding-bottom: 50px;
 }
 .about h3{
@@ -170,6 +170,7 @@ li a:hover {
     width: 350px;
     display: block;
     margin: auto;
+    margin-top: 100px;
 }
 @media(max-width:791px){
     .about .left img{

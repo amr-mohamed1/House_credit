@@ -180,6 +180,9 @@ li a:hover {
     text-align: right;
     padding-top: 30px;
 }
+.role .content img{
+    margin: auto;
+}
 .role .content h3{
     font-family: 'Cairo', sans-serif;
     font-size: 25px;
