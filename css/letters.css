@@ -218,6 +218,10 @@ li a:hover {
     text-align: center;
     font-size: 18px;
 }
+.role .content .contact{
+    padding-right: 0;
+    color:#1f2dce;
+}
 /*end roles*/
 
 /*start footer*/
