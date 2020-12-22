@@ -100,20 +100,14 @@ li a:hover {
     
 }
 .hero h2{
-    padding-top: 90px;
+    padding-top: 120px;
     text-shadow: 1px 1px 1px #1f2dce;
-}
-.hero p{
-    text-align: center;
-    font-size: 20px;
-    padding: 20px 50px;
-    margin: 0;
 }
 .hero button{
     padding: 10px 20px;
     width: 180px;
     display: inline-block;
-    margin-top: 10px;
+    margin-top: 20px;
     background-color: #1f2dce;
     color:#eee;
     border-radius: 20px;
@@ -135,13 +129,9 @@ li a:hover {
 .role{
     padding-bottom: 20px;
 }
-.role h3{
-    padding-top: 50px;
-    padding-bottom: 10px;
-}
 .role .bar {
-    height: 4px;
-    width: 160px;
+    height: 50px;
+    width: 80%;
     background: #1f2dce;
     position: relative;
     border-radius: 5px;
@@ -150,33 +140,37 @@ li a:hover {
     margin: auto;
 }
 @keyframes MOVE-BG {
-    from {
-        transform: translateX(0);
+    0% {
+        transform: translateX(-350px);
+    }
+    100%{
+        transform: translateX(880px);
     }
 
-    to {
-        transform: translateX(180px);
+}
+@media(max-width:750px){
+    @keyframes MOVE-BG {
+        0% {
+            transform: translateX(-300px);
+        }
+        100%{
+            transform: translateX(350px);
+        }
+    
     }
 }
-.role .bar::before {
+.role .bar span {
     content: '';
     position: absolute;
     left: 0;
     top: 0;
     height: 100%;
-    width: 8px;
-    background: #ffffff;
-    animation-duration: 2s;
+    color:#fff !important;
+    margin-top: 10px;
+    animation-duration: 12s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-name: MOVE-BG;
-}
-.role img{
-    display: block;
-    width: 300px;
-    margin: auto;
-    padding-bottom: 50px;
-    margin-top: 90px;
 }
 @media(max-width:750px){
     .role img{
@@ -188,24 +182,54 @@ li a:hover {
     font-size: 20px;
     padding-bottom: 5px;
 }
-.role a{
-    text-decoration: none;
+.role h3{
+    font-family: 'Cairo', sans-serif;
+    font-size: 25px;
+    font-weight: 700;
 }
-.role .butt{
-    padding: 10px 20px;
-    width: 120px;
-    background-color: #1f2dce;
-    float: right;
-    color:#eee;
-    border-radius: 20px;
+.role .content{
+    text-align: right;
+    padding-top: 30px;
+}
+.role .content h3{
+    font-family: 'Cairo', sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    padding-top: 30px;
+}
+.role .content p{
+    padding-top: 20px;
+    color:#000
+}
+.role .content img{
+    display: block;
+    margin: auto;
+    padding: 20px 0;
+}
+.role .content span{
+    font-size: 17px;
+    color: #777;
+    display: inline-block;
+    font-weight: 900;
+    font-family: 'Cairo', sans-serif;
+}
+.role .content span i{
+    font-size: 20px;
+    color:red;
+    margin-left: 5px;
+}
+
+.role .content a{
+    padding: 0 7px;
+    color:#1f2dce;
     text-decoration: none;
-    transition: all .4s ease-in;
+    transition: all .3s ease-in;
     text-align: center;
+    font-size: 18px;
 }
-.role .butt:hover{
-    background-color: #007bff;
-    color:#fff;
-    box-shadow: 0px 0px 18px #1f2dce;
+.role .content .contact{
+    padding-right: 0;
+    color:#1f2dce;
 }
 /*end roles*/
 
@@ -217,8 +241,9 @@ li a:hover {
 .primary_footer h3{
     color: #fff;
     padding-top: 50px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     text-align: right;
+    font-family: 'Cairo', sans-serif;
 }
 .primary_footer img{
     width: 150px;
@@ -254,6 +279,7 @@ li a:hover {
     color:#6a74dd
 }
 /*end footer*/
+
 
 /*loading*/
 
