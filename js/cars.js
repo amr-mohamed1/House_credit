@@ -2,17 +2,22 @@ $("document").ready(function () {
     $(".btn_scroll").click(function() {
         window.scrollTo({ top: 500, behavior: 'smooth'});
       });
-      
-        /* loading */
 
-    $(".loading").ready(
-      function () {
-          setTimeout(function () {
-              $(".loading").fadeOut();
+$('.message .close')
+  .on('click', function() {
+    $(this)
+      .closest('.message')
+      .transition('fade')
+    ;
+  })
+;
+$(".loading").ready(
+    function () {
+        setTimeout(function () {
+            $(".loading").fadeOut();
 
-          }, 1000);
-      });
-
+        }, 1000);
+    });
 })
 
 
